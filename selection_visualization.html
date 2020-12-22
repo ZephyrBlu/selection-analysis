@@ -8,6 +8,12 @@
 </head>
 <body>
     <script>
+        Chart.scaleService.updateScaleDefaults('linear', {
+            ticks: {
+                max: 120,
+            },
+        });
+
         Object.entries(selection_timeline).forEach(([player, values]) => {
             values.sort((a, b) => a.tick - b.tick);
             values = values.filter(v => v.tick <= 33600);
@@ -24,12 +30,6 @@
 
             console.log(econ, army, infra);
 
-            Chart.scaleService.updateScaleDefaults('linear', {
-                ticks: {
-                    max: 120,
-                },
-            });
-
             var canvas = document.createElement('canvas');
             canvas.id = player;
             document.body.appendChild(canvas)
@@ -44,26 +44,27 @@
                             label: 'Economy',
                             backgroundColor: 'green',
                             borderColor: 'green',
-                            order: -1,
                             data: econ,
                         },
                         {
                             label: 'Army',
                             backgroundColor: 'red',
                             borderColor: 'red',
-                            order: -1,
                             data: army,
                         },
                         {
                             label: 'Infrastructure',
                             backgroundColor: 'blue',
                             borderColor: 'blue',
-                            order: -1,
                             data: infra,
                         },
                     ],
                 },
                 options: {
+                    title: {
+                        display: true,
+                        text: player.charAt(0).toUpperCase() + player.slice(1),
+                    },
                     scales: {
                         xAxes: [{
                             stacked: true,
@@ -75,7 +76,6 @@
                             stacked: true,
                             gridLines: {
                                 display: true,
-                                z: 1,
                                 color: 'black',
                             },
                         }],
