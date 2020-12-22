@@ -1,6 +1,6 @@
 import json
 from collections import namedtuple
-from statistics import mean, median
+from statistics import median
 from pathlib import Path
 from multiprocessing import Pool
 from zephyrus_sc2_parser import parse_replay
@@ -174,20 +174,20 @@ if __name__ == '__main__':
                         aggregated[group][t['tick']] = []
                     aggregated[group][t['tick']].append(t)
 
-        timeline = {}
+        aggregated_ticks = {}
         for group, ticks in aggregated.items():
             for tick, values in ticks.items():
                 percentages = list(map(lambda x: x['percent'], values))
                 avg = round(median(percentages), 1)
 
-                if tick not in timeline:
-                    timeline[tick] = {
+                if tick not in aggregated_ticks:
+                    aggregated_ticks[tick] = {
                         'tick': tick,
                         group: avg,
                     }
                 else:
-                    timeline[tick].update({group: avg})
-        player_ticks[player.name] = timeline
+                    aggregated_ticks[tick].update({group: avg})
+        player_ticks[player.name] = list(aggregated_ticks.values())
 
     with open('selection_timeline.json', 'w') as selection_data:
         json.dump(player_ticks, selection_data, indent=4)
