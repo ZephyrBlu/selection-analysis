@@ -119,7 +119,7 @@ def handle_replay(path, player_names, identifiers):
             for n, v in selection_percentages.items():
                 tick_times[n].append({
                     'tick': (count + 1) * TICK_SIZE,
-                    'percent': round((v / total_percentage) * 100, 1),
+                    'percent': round(v, 1),
                 })
 
                 # print(n.capitalize())
