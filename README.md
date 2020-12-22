@@ -4,7 +4,7 @@ The only external dependency is `sc2_tournament_analysis` which is a tiny helper
 
 # Usage
 
-Simply run `analyze.py` and the processed data will be output to `selection_timeline.json`.
+Simply run `analyze.py` and the processed data will be output to `selection_timeline.json` and `selection_timeline.js`. All data from `selection_timeline.js` will be dynamically rendered in `index.html`. 
 
 If you want to analyze different replays simply add/remove them from the `replays/` directory.
 
