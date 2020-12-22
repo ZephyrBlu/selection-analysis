@@ -4,7 +4,9 @@ The only external dependency is `sc2_tournament_analysis` which is a tiny helper
 
 # Usage
 
-`analyze.py` contains the script for analyzing replays in the `replays/` directory. If you want to analyze different replays simply add/remove them from the `replays/` directory.
+Simply run `analyze.py` and the processed data will be output to `selection_timeline.json`.
+
+If you want to analyze different replays simply add/remove them from the `replays/` directory.
 
 Currently the script is hardcoded to parse all replays, but only analyze games played by [Byun, Maru, Reynor and ShoWTimE](https://github.com/ZephyrBlu/selection-analysis/blob/master/analyze.py#L128). If you wish to analyze by race instead then you will want to alter [this line](https://github.com/ZephyrBlu/selection-analysis/blob/master/analyze.py#L162) to `if player.race not in <insert list races you want to analyze>` and alter [this line](https://github.com/ZephyrBlu/selection-analysis/blob/master/analyze.py#L190) to record data by `player.race` instead of `player.name`.
 
