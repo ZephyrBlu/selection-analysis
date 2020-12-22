@@ -7,7 +7,13 @@
     <script src="selection_timeline.js"></script>
 </head>
 <body>
+    <style>
+        body {
+            background-color: hsl(230, 70%, 6%);
+        }
+    </style>
     <script>
+        Chart.defaults.global.defaultFontColor = 'hsl(0, 0%, 85%)';
         Chart.scaleService.updateScaleDefaults('linear', {
             ticks: {
                 max: 100,
@@ -122,7 +128,13 @@
                 options: {
                     title: {
                         display: true,
+                        fontSize: 24,
                         text: player.charAt(0).toUpperCase() + player.slice(1),
+                    },
+                    legend: {
+                        labels: {
+                            fontSize: 14,
+                        },
                     },
                     scales: {
                         xAxes: [{
@@ -135,7 +147,7 @@
                             stacked: true,
                             gridLines: {
                                 display: true,
-                                color: 'black',
+                                color: 'white',
                             },
                         }],
                     },
