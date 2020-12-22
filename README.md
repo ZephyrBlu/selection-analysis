@@ -8,7 +8,7 @@ Simply run `analyze.py` and the processed data will be output to `selection_time
 
 If you want to analyze different replays simply add/remove them from the `replays/` directory.
 
-Currently the script is hardcoded to parse all replays, but only analyze games played by [Byun, Maru, Reynor and ShoWTimE](https://github.com/ZephyrBlu/selection-analysis/blob/master/analyze.py#L128). If you wish to analyze by race instead then you will want to alter [this line](https://github.com/ZephyrBlu/selection-analysis/blob/master/analyze.py#L162) to `if player.race not in <insert list races you want to analyze>` and alter [this line](https://github.com/ZephyrBlu/selection-analysis/blob/master/analyze.py#L190) to record data by `player.race` instead of `player.name`.
+Currently the script is hardcoded to parse and analyze all replays. If you want to display only particular players you can modify that in the HTML file. If you want to analyze by race, you will need to make some modifications.
 
 By default the script uses Python's multiprocessing module and the parser does not make network calls to speed up parsing. The ASUS ROG replays (~100) take ~120sec to parse and process.
 

@@ -81,16 +81,23 @@ def handle_replay(path, player_names, identifiers):
                         if 'economy' not in seen_group:
                             selection_times['economy'].append(diff)
                             seen_group.add('economy')
+                    elif (
+                        GameObj.BUILDING in obj.type
+                        or obj.name == 'Queen'
+                        or obj.name == 'Larva'
+                    ):
+                        if 'infra' not in seen_group:
+                            selection_times['infra'].append(diff)
+                            seen_group.add('infra')
                     elif GameObj.UNIT in obj.type:
                         if 'army' not in seen_group:
                             selection_times['army'].append(diff)
                             seen_group.add('army')
-                    elif GameObj.BUILDING in obj.type:
-                        if 'infra' not in seen_group:
-                            selection_times['infra'].append(diff)
-                            seen_group.add('infra')
 
             # print(f'@{(count + 1) * 7}s, {round(sum(all_times) / 22.4, 2)}s')
+
+            total_percentage = 0
+            selection_percentages = {}
 
             # iterate through all selection times for all groups
             for n, v in selection_times.items():
@@ -106,11 +113,13 @@ def handle_replay(path, player_names, identifiers):
 
                 # percentage of time the current group was selected
                 percent = (vt / all_sec) * 100
+                total_percentage += percent
+                selection_percentages[n] = percent
 
+            for n, v in selection_percentages.items():
                 tick_times[n].append({
                     'tick': (count + 1) * TICK_SIZE,
-                    'seconds': round(vt, 3),
-                    'percent': round(percent, 1),
+                    'percent': round((v / total_percentage) * 100, 1),
                 })
 
                 # print(n.capitalize())
@@ -124,13 +133,6 @@ def handle_replay(path, player_names, identifiers):
 if __name__ == '__main__':
     path = Path('replays')
     selections = {}
-
-    players = [
-        'byun',
-        'maru',
-        'reynor',
-        'showtime',
-    ]
 
     for item in path.iterdir():
         print(f'In {item.name} directory')
@@ -159,9 +161,6 @@ if __name__ == '__main__':
 
     player_ticks = {}
     for player, player_data in selections.items():
-        if player.name not in players:
-            continue
-
         aggregated = {
             'economy': {},
             'army': {},

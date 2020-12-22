@@ -10,29 +10,88 @@
     <script>
         Chart.scaleService.updateScaleDefaults('linear', {
             ticks: {
-                max: 120,
+                max: 100,
             },
         });
 
-        Object.entries(selection_timeline).forEach(([player, values]) => {
+        const players = [
+            // for image
+            'byun',
+            'maru',
+            'serral',
+            'showtime',
+
+            // terran
+            'byun',
+            'maru',
+            'liquidclem',
+            'innovation',
+            'special',
+
+            // protoss
+            'stats',
+            'parting',
+            'showtime',
+            'neeb',
+            'tlharstem',
+            'maxpax',
+
+            // zerg
+            'serral',
+            'reynor',
+            'solar',
+            'jinairrogue',
+            'afreecadrg',
+        ];
+
+        console.log(selection_timeline);
+
+        players.forEach((player) => {
+            let values = selection_timeline[player];
             values.sort((a, b) => a.tick - b.tick);
-            values = values.filter(v => v.tick <= 33600);
-            console.log(selection_timeline[player]);
+            values = values.filter(v => v.tick <= 20160);
             const axis = values.map((v) => {
                 const sec = v.tick / 22.4;
                 const min = Math.floor(sec / 60);
                 const roundedSec = Math.round(sec - (min * 60));
                 return `${min}:${roundedSec < 10 ? `0${roundedSec}` : roundedSec}`;
             });
+
+            values = values.map(v => {
+                let totalValues = 0;
+                const allValues = {};
+                Object.entries(v).forEach(([name, value]) => {
+                    if (name === 'tick') {
+                        return;
+                    }
+
+                    totalValues += value;
+                    allValues[name] = value;
+                });
+
+                const valueProportions = {};
+                Object.entries(allValues).forEach(([name, value]) => {
+                    valueProportions[name] = Number(((value / totalValues) * 100).toFixed(1));
+                });
+
+                return valueProportions;
+            });
+
             const econ = values.map(v => v.economy || 0);
             const army = values.map(v => v.army || 0);
             const infra = values.map(v => v.infra || 0);
 
-            console.log(econ, army, infra);
+            var canvasWrapper = document.createElement('div');
+            canvasWrapper.classList.add('wrapper');
+            canvasWrapper.style.position = 'relative';
+            canvasWrapper.style.width = '50%';
+            canvasWrapper.style.display = 'inline-block';
 
             var canvas = document.createElement('canvas');
             canvas.id = player;
-            document.body.appendChild(canvas)
+
+            canvasWrapper.appendChild(canvas);
+            document.body.appendChild(canvasWrapper);
 
             var ctx = document.getElementById(player).getContext('2d');
             var chart = new Chart(ctx, {
@@ -47,16 +106,16 @@
                             data: econ,
                         },
                         {
-                            label: 'Army',
-                            backgroundColor: 'red',
-                            borderColor: 'red',
-                            data: army,
-                        },
-                        {
                             label: 'Infrastructure',
                             backgroundColor: 'blue',
                             borderColor: 'blue',
                             data: infra,
+                        },
+                        {
+                            label: 'Army',
+                            backgroundColor: 'red',
+                            borderColor: 'red',
+                            data: army,
                         },
                     ],
                 },
