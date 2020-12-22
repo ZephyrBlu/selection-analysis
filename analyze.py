@@ -1,4 +1,6 @@
 import json
+from collections import namedtuple
+from statistics import mean, median
 from pathlib import Path
 from multiprocessing import Pool
 from zephyrus_sc2_parser import parse_replay
@@ -18,104 +20,117 @@ command_buildings = [
 # ~7sec. PlayerStatsEvents occur at this interval throughout the game
 TICK_SIZE = 160
 
+PlayerTuple = namedtuple('PlayerTuple', ['name', 'race'])
 
-def handle_replay(path):
+
+def handle_replay(path, player_names, identifiers):
+    parsed_ticks = {}
+
     replay = parse_replay(path, local=True, creep=False)
 
-    tick_times = {
-        'economy': [],
-        'army': [],
-        'infra': [],
-    }
-    # remove last selection since it technically has no end
-    selections = replay.players[1].selections[:-1]
-    selections.sort(key=lambda x: x['start'])
-
-    # list of selections in ~7sec intervals throughout the game
-    ticks = [[]]
-
-    # current tick
-    tick = 1
-    for s in selections:
-        # as long as the selection ends before the end of the tick
-        # we count it as part of the tick
-        # tick * TICK_SIZE = upper gameloop limit for the current tick
-        if s['end'] <= tick * TICK_SIZE:
-            # add to current tick
-            ticks[tick - 1].append(s)
-        else:
-            # create a new tick
-            ticks.append([s])
-            tick += 1
-
-    for count, t in enumerate(ticks):
-        all_times = []
-        selection_times = {
+    for player in replay.players.values():
+        tick_times = {
             'economy': [],
             'army': [],
             'infra': [],
         }
+        # remove last selection since it technically has no end
+        selections = player.selections[:-1]
+        selections.sort(key=lambda x: x['start'])
 
-        # iterating through all selections in the current tick
-        for s in t:
-            # if there are any objects of a group (economy/army/infra) in a selection
-            # it counts for that groups. multiple groups can be counted in a single selection
-            seen_group = set()
-            diff = s['end'] - s['start']
-            all_times.append(diff)
+        # list of selections in ~7sec intervals throughout the game
+        ticks = [[]]
 
-            # check the selection for each group
-            # if we haven't already counted it for a group, record the selection length
-            for obj in s['selection']:
-                if (
-                    obj.name in command_buildings
-                    or GameObj.WORKER in obj.type
-                ):
-                    if 'economy' not in seen_group:
-                        selection_times['economy'].append(diff)
-                        seen_group.add('economy')
-                elif GameObj.UNIT in obj.type:
-                    if 'army' not in seen_group:
-                        selection_times['army'].append(diff)
-                        seen_group.add('army')
-                elif GameObj.BUILDING in obj.type:
-                    if 'infra' not in seen_group:
-                        selection_times['infra'].append(diff)
-                        seen_group.add('infra')
+        # current tick
+        tick = 1
+        for s in selections:
+            # as long as the selection ends before the end of the tick
+            # we count it as part of the tick
+            # tick * TICK_SIZE = upper gameloop limit for the current tick
+            if s['end'] <= tick * TICK_SIZE:
+                # add to current tick
+                ticks[tick - 1].append(s)
+            else:
+                # create a new tick
+                ticks.append([s])
+                tick += 1
 
-        print(f'@{(count + 1) * 7}s, {round(sum(all_times) / 22.4, 2)}s')
+        for count, t in enumerate(ticks):
+            all_times = []
+            selection_times = {
+                'economy': [],
+                'army': [],
+                'infra': [],
+            }
 
-        # iterate through all selection times for all groups
-        for n, v in selection_times.items():
-            # if no selections for a particular group, skip it
-            if not v:
-                continue
+            # iterating through all selections in the current tick
+            for s in t:
+                # if there are any objects of a group (economy/army/infra) in a selection
+                # it counts for that groups. multiple groups can be counted in a single selection
+                seen_group = set()
+                diff = s['end'] - s['start']
+                all_times.append(diff)
 
-            # total selection time in seconds for the current group
-            vt = sum(v) / 22.4
+                # check the selection for each group
+                # if we haven't already counted it for a group, record the selection length
+                for obj in s['selection']:
+                    if (
+                        obj.name in command_buildings
+                        or GameObj.WORKER in obj.type
+                    ):
+                        if 'economy' not in seen_group:
+                            selection_times['economy'].append(diff)
+                            seen_group.add('economy')
+                    elif GameObj.UNIT in obj.type:
+                        if 'army' not in seen_group:
+                            selection_times['army'].append(diff)
+                            seen_group.add('army')
+                    elif GameObj.BUILDING in obj.type:
+                        if 'infra' not in seen_group:
+                            selection_times['infra'].append(diff)
+                            seen_group.add('infra')
 
-            # total selection time in seconds
-            all_sec = sum(all_times) / 22.4
+            # print(f'@{(count + 1) * 7}s, {round(sum(all_times) / 22.4, 2)}s')
 
-            # percentage of time the current group was selected
-            percent = (vt / all_sec) * 100
+            # iterate through all selection times for all groups
+            for n, v in selection_times.items():
+                # if no selections for a particular group, skip it
+                if not v:
+                    continue
 
-            tick_times[n].append({
-                'tick': (count + 1) * TICK_SIZE,
-                'seconds': round(vt, 3),
-                'percent': round(percent, 1),
-            })
+                # total selection time in seconds for the current group
+                vt = sum(v) / 22.4
 
-            print(n.capitalize())
-            print(f'Selection Time: {vt}s ({round(percent, 2)}')
+                # total selection time in seconds
+                all_sec = sum(all_times) / 22.4
 
-    return tick_times
+                # percentage of time the current group was selected
+                percent = (vt / all_sec) * 100
+
+                tick_times[n].append({
+                    'tick': (count + 1) * TICK_SIZE,
+                    'seconds': round(vt, 3),
+                    'percent': round(percent, 1),
+                })
+
+                # print(n.capitalize())
+                # print(f'Selection Time: {vt}s ({round(percent, 2)}')
+
+        parsed_ticks[PlayerTuple(player.name.lower(), player.race.lower())] = tick_times
+    return parsed_ticks
 
 
 # required for multiprocessing
 if __name__ == '__main__':
     path = Path('replays')
-    selections = []
+    selections = {}
+
+    players = [
+        'byun',
+        'maru',
+        'reynor',
+        'showtime',
+    ]
 
     for item in path.iterdir():
         print(f'In {item.name} directory')
@@ -134,10 +149,45 @@ if __name__ == '__main__':
         with Pool(10) as p:
             results = p.starmap(handle_replay, match_info_list)
 
-        selections.extend(results)
+        for r in results:
+            for name, data in r.items():
+                if name not in selections:
+                    selections[name] = []
+                selections[name].append(data)
+
         print(f'Replays from {item.name} parsed successfully')
 
-    print(selections)
+    player_ticks = {}
+    for player, player_data in selections.items():
+        if player.name not in players:
+            continue
 
-    # with open('selections.json', 'w') as selection_data:
-    #     json.dump(tick_times, selection_data, indent=4)
+        aggregated = {
+            'economy': {},
+            'army': {},
+            'infra': {},
+        }
+        for game in player_data:
+            for group, times in game.items():
+                for t in times:
+                    if t['tick'] not in aggregated[group]:
+                        aggregated[group][t['tick']] = []
+                    aggregated[group][t['tick']].append(t)
+
+        timeline = {}
+        for group, ticks in aggregated.items():
+            for tick, values in ticks.items():
+                percentages = list(map(lambda x: x['percent'], values))
+                avg = round(median(percentages), 1)
+
+                if tick not in timeline:
+                    timeline[tick] = {
+                        'tick': tick,
+                        group: avg,
+                    }
+                else:
+                    timeline[tick].update({group: avg})
+        player_ticks[player.name] = timeline
+
+    with open('selection_timeline.json', 'w') as selection_data:
+        json.dump(player_ticks, selection_data, indent=4)
