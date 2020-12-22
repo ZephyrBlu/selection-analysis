@@ -16,4 +16,4 @@ Note: Multiprocessing will use a significant amount of your CPU, so be aware of 
 
 # Why is the parser included?
 
-Because this script only works with a new version of the parser that supports selection tracking, and that version is currently still being developed. In the near future the parser included in the repo will be obsolete or unneeded.
+Because this script only works with a new version of the parser that supports selection tracking, and that version is currently still being developed ([On this branch](https://github.com/ZephyrBlu/zephyrus-sc2-parser/pull/5)). In the near future the parser included in the repo will be obsolete or unneeded.
