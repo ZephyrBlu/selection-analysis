@@ -187,7 +187,10 @@ if __name__ == '__main__':
                     }
                 else:
                     aggregated_ticks[tick].update({group: avg})
-        player_ticks[player.name] = list(aggregated_ticks.values())
+        player_ticks[player.name] = sorted(list(aggregated_ticks.values()), key=lambda x: x['tick'])
 
     with open('selection_timeline.json', 'w') as selection_data:
         json.dump(player_ticks, selection_data, indent=4)
+
+    with open('selection_timeline.js', 'w') as selection_data:
+        selection_data.write(f'var selection_timeline = {player_ticks}')

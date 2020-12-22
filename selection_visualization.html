@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Selection Analysis</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="selection_timeline.js"></script>
+</head>
+<body>
+    <script>
+        Object.entries(selection_timeline).forEach(([player, values]) => {
+            values.sort((a, b) => a.tick - b.tick);
+            values = values.filter(v => v.tick <= 33600);
+            console.log(selection_timeline[player]);
+            const axis = values.map((v) => {
+                const sec = v.tick / 22.4;
+                const min = Math.floor(sec / 60);
+                const roundedSec = Math.round(sec - (min * 60));
+                return `${min}:${roundedSec < 10 ? `0${roundedSec}` : roundedSec}`;
+            });
+            const econ = values.map(v => v.economy || 0);
+            const army = values.map(v => v.army || 0);
+            const infra = values.map(v => v.infra || 0);
+
+            console.log(econ, army, infra);
+
+            Chart.scaleService.updateScaleDefaults('linear', {
+                ticks: {
+                    max: 120,
+                },
+            });
+
+            var canvas = document.createElement('canvas');
+            canvas.id = player;
+            document.body.appendChild(canvas)
+
+            var ctx = document.getElementById(player).getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: axis,
+                    datasets: [
+                        {
+                            label: 'Economy',
+                            backgroundColor: 'green',
+                            borderColor: 'green',
+                            order: -1,
+                            data: econ,
+                        },
+                        {
+                            label: 'Army',
+                            backgroundColor: 'red',
+                            borderColor: 'red',
+                            order: -1,
+                            data: army,
+                        },
+                        {
+                            label: 'Infrastructure',
+                            backgroundColor: 'blue',
+                            borderColor: 'blue',
+                            order: -1,
+                            data: infra,
+                        },
+                    ],
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            stacked: true,
+                            offset: false,
+                            categoryPercentage: 1,
+                            barPercentage: 1,
+                        }],
+                        yAxes: [{
+                            stacked: true,
+                            gridLines: {
+                                display: true,
+                                z: 1,
+                                color: 'black',
+                            },
+                        }],
+                    },
+                },
+            });
+        });
+    </script>
+</body>
+</html>
