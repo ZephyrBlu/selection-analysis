@@ -2371,9 +2371,9 @@
         },
         {
             "tick": 12480,
-            "economy": 25.2,
+            "economy": 30.1,
             "army": 50.9,
-            "infra": 30.6
+            "infra": 26.7
         },
         {
             "tick": 12640,
@@ -2383,9 +2383,9 @@
         },
         {
             "tick": 12800,
-            "economy": 17.7,
+            "economy": 28.2,
             "army": 69.5,
-            "infra": 19.5
+            "infra": 19.3
         },
         {
             "tick": 12960,
@@ -2407,15 +2407,15 @@
         },
         {
             "tick": 13440,
-            "economy": 5.5,
+            "economy": 5.3,
             "army": 89.8,
-            "infra": 11.7
+            "infra": 9.1
         },
         {
             "tick": 13600,
-            "economy": 20.1,
+            "economy": 16.5,
             "army": 78.0,
-            "infra": 15.1
+            "infra": 17.3
         },
         {
             "tick": 13760,
@@ -2425,9 +2425,9 @@
         },
         {
             "tick": 13920,
-            "economy": 33.1,
+            "economy": 41.0,
             "army": 61.0,
-            "infra": 34.4
+            "infra": 29.5
         },
         {
             "tick": 14080,
@@ -2473,7 +2473,7 @@
         },
         {
             "tick": 15200,
-            "economy": 28.6,
+            "economy": 32.2,
             "army": 68.6,
             "infra": 24.2
         },
@@ -2497,19 +2497,19 @@
         },
         {
             "tick": 15840,
-            "economy": 19.5,
+            "economy": 22.7,
             "army": 55.0,
-            "infra": 30.5
+            "infra": 27.2
         },
         {
             "tick": 16000,
-            "economy": 28.5,
+            "economy": 57.6,
             "army": 52.1,
             "infra": 14.8
         },
         {
             "tick": 16160,
-            "economy": 16.2,
+            "economy": 29.0,
             "army": 33.1,
             "infra": 24.3
         },
@@ -2533,15 +2533,15 @@
         },
         {
             "tick": 16800,
-            "economy": 18.4,
+            "economy": 21.4,
             "army": 77.7,
             "infra": 24.4
         },
         {
             "tick": 16960,
-            "economy": 20.9,
+            "economy": 24.2,
             "army": 77.3,
-            "infra": 22.7
+            "infra": 29.8
         },
         {
             "tick": 17120,
@@ -2569,9 +2569,9 @@
         },
         {
             "tick": 17760,
-            "economy": 18.2,
+            "economy": 22.4,
             "army": 75.3,
-            "infra": 16.3
+            "infra": 19.0
         },
         {
             "tick": 17920,
@@ -2601,7 +2601,7 @@
             "tick": 18560,
             "economy": 4.3,
             "army": 89.8,
-            "infra": 17.9
+            "infra": 15.2
         },
         {
             "tick": 18720,
@@ -2677,15 +2677,15 @@
         },
         {
             "tick": 20640,
-            "economy": 32.9,
+            "economy": 45.1,
             "army": 69.8,
-            "infra": 22.5
+            "infra": 16.5
         },
         {
             "tick": 20800,
-            "economy": 7.6,
+            "economy": 10.3,
             "army": 73.3,
-            "infra": 19.1
+            "infra": 32.7
         },
         {
             "tick": 20960,
@@ -2706,9 +2706,9 @@
         },
         {
             "tick": 21440,
-            "economy": 15.4,
+            "economy": 17.2,
             "army": 71.3,
-            "infra": 15.4
+            "infra": 13.7
         },
         {
             "tick": 21600,
@@ -2757,9 +2757,9 @@
         },
         {
             "tick": 22880,
-            "economy": 25.5,
+            "economy": 30.6,
             "army": 78.0,
-            "infra": 15.2
+            "infra": 10.2
         },
         {
             "tick": 23040,
@@ -2786,7 +2786,7 @@
         },
         {
             "tick": 23680,
-            "economy": 11.1,
+            "economy": 33.3,
             "army": 82.0,
             "infra": 36.1
         },
@@ -2816,9 +2816,9 @@
         },
         {
             "tick": 24480,
-            "economy": 27.2,
+            "economy": 46.2,
             "army": 51.3,
-            "infra": 48.7
+            "infra": 29.7
         },
         {
             "tick": 24640,
@@ -2834,14 +2834,15 @@
         },
         {
             "tick": 24960,
-            "economy": 16.0,
+            "economy": 26.3,
             "army": 58.9,
-            "infra": 26.9
+            "infra": 16.6
         },
         {
             "tick": 25120,
+            "economy": 4.8,
             "army": 77.6,
-            "infra": 22.4
+            "infra": 17.7
         },
         {
             "tick": 25280,
@@ -2869,9 +2870,9 @@
         },
         {
             "tick": 25920,
-            "economy": 3.8,
+            "economy": 20.9,
             "army": 68.1,
-            "infra": 31.9
+            "infra": 14.8
         },
         {
             "tick": 26080,
@@ -2903,9 +2904,9 @@
         },
         {
             "tick": 26880,
-            "economy": 19.0,
+            "economy": 31.3,
             "army": 46.0,
-            "infra": 35.0
+            "infra": 22.7
         },
         {
             "tick": 27040,
@@ -5107,9 +5108,9 @@
         },
         {
             "tick": 12480,
-            "economy": 4.3,
+            "economy": 5.8,
             "army": 76.4,
-            "infra": 19.1
+            "infra": 18.2
         },
         {
             "tick": 12640,
@@ -5137,13 +5138,13 @@
         },
         {
             "tick": 13280,
-            "economy": 11.9,
+            "economy": 16.4,
             "army": 68.2,
-            "infra": 29.2
+            "infra": 27.1
         },
         {
             "tick": 13440,
-            "economy": 15.3,
+            "economy": 15.0,
             "army": 77.6,
             "infra": 17.2
         },
@@ -5155,7 +5156,7 @@
         },
         {
             "tick": 13760,
-            "economy": 13.5,
+            "economy": 15.6,
             "army": 64.6,
             "infra": 25.8
         },
@@ -5167,13 +5168,13 @@
         },
         {
             "tick": 14080,
-            "economy": 11.9,
+            "economy": 15.2,
             "army": 75.7,
             "infra": 13.7
         },
         {
             "tick": 14240,
-            "economy": 8.3,
+            "economy": 10.8,
             "army": 83.2,
             "infra": 13.6
         },
@@ -5181,7 +5182,7 @@
             "tick": 14400,
             "economy": 11.1,
             "army": 69.6,
-            "infra": 25.2
+            "infra": 24.7
         },
         {
             "tick": 14560,
@@ -5191,25 +5192,25 @@
         },
         {
             "tick": 14720,
-            "economy": 6.5,
+            "economy": 7.9,
             "army": 74.3,
-            "infra": 18.7
+            "infra": 17.1
         },
         {
             "tick": 14880,
-            "economy": 7.1,
+            "economy": 6.1,
             "army": 79.6,
-            "infra": 16.1
+            "infra": 15.2
         },
         {
             "tick": 15040,
-            "economy": 7.2,
+            "economy": 10.2,
             "army": 77.8,
             "infra": 18.5
         },
         {
             "tick": 15200,
-            "economy": 9.2,
+            "economy": 7.4,
             "army": 78.9,
             "infra": 16.9
         },
@@ -5239,15 +5240,15 @@
         },
         {
             "tick": 16000,
-            "economy": 12.9,
+            "economy": 12.0,
             "army": 73.7,
             "infra": 21.6
         },
         {
             "tick": 16160,
-            "economy": 10.7,
+            "economy": 13.9,
             "army": 73.5,
-            "infra": 15.8
+            "infra": 13.4
         },
         {
             "tick": 16320,
@@ -5265,7 +5266,7 @@
             "tick": 16640,
             "economy": 8.1,
             "army": 78.6,
-            "infra": 14.4
+            "infra": 14.2
         },
         {
             "tick": 16800,
@@ -5299,9 +5300,9 @@
         },
         {
             "tick": 17600,
-            "economy": 7.0,
+            "economy": 9.8,
             "army": 70.5,
-            "infra": 23.2
+            "infra": 21.5
         },
         {
             "tick": 17760,
@@ -5311,9 +5312,9 @@
         },
         {
             "tick": 17920,
-            "economy": 4.8,
+            "economy": 14.2,
             "army": 72.5,
-            "infra": 23.2
+            "infra": 15.3
         },
         {
             "tick": 18080,
@@ -5323,15 +5324,15 @@
         },
         {
             "tick": 18240,
-            "economy": 8.3,
+            "economy": 10.7,
             "army": 68.8,
             "infra": 20.1
         },
         {
             "tick": 18400,
-            "economy": 4.0,
+            "economy": 17.9,
             "army": 86.8,
-            "infra": 18.1
+            "infra": 10.9
         },
         {
             "tick": 18560,
@@ -5343,7 +5344,7 @@
             "tick": 18720,
             "economy": 9.2,
             "army": 76.0,
-            "infra": 20.7
+            "infra": 18.0
         },
         {
             "tick": 18880,
@@ -5353,9 +5354,9 @@
         },
         {
             "tick": 19040,
-            "economy": 10.6,
+            "economy": 21.8,
             "army": 75.7,
-            "infra": 24.3
+            "infra": 19.9
         },
         {
             "tick": 19200,
@@ -5365,15 +5366,15 @@
         },
         {
             "tick": 19360,
-            "economy": 3.7,
+            "economy": 7.5,
             "army": 74.7,
-            "infra": 21.9
+            "infra": 16.0
         },
         {
             "tick": 19520,
-            "economy": 23.1,
+            "economy": 30.3,
             "army": 76.0,
-            "infra": 16.4
+            "infra": 15.6
         },
         {
             "tick": 19680,
@@ -5395,7 +5396,7 @@
         },
         {
             "tick": 20160,
-            "economy": 16.9,
+            "economy": 7.2,
             "army": 77.1,
             "infra": 13.0
         },
@@ -5437,15 +5438,15 @@
         },
         {
             "tick": 21280,
-            "economy": 20.4,
+            "economy": 21.9,
             "army": 64.8,
-            "infra": 28.3
+            "infra": 24.8
         },
         {
             "tick": 21440,
-            "economy": 15.6,
+            "economy": 20.6,
             "army": 70.8,
-            "infra": 23.4
+            "infra": 18.5
         },
         {
             "tick": 21600,
@@ -5461,9 +5462,9 @@
         },
         {
             "tick": 21920,
-            "economy": 6.2,
+            "economy": 7.2,
             "army": 74.6,
-            "infra": 26.6
+            "infra": 20.9
         },
         {
             "tick": 22080,
@@ -5473,15 +5474,15 @@
         },
         {
             "tick": 22240,
-            "economy": 14.1,
+            "economy": 19.7,
             "army": 75.2,
-            "infra": 24.0
+            "infra": 23.2
         },
         {
             "tick": 22400,
-            "economy": 18.9,
+            "economy": 12.8,
             "army": 77.4,
-            "infra": 22.6
+            "infra": 20.5
         },
         {
             "tick": 22560,
@@ -5521,9 +5522,9 @@
         },
         {
             "tick": 23520,
-            "economy": 4.7,
+            "economy": 6.0,
             "army": 76.6,
-            "infra": 22.1
+            "infra": 21.2
         },
         {
             "tick": 23680,
@@ -5533,9 +5534,9 @@
         },
         {
             "tick": 23840,
-            "economy": 22.1,
+            "economy": 28.2,
             "army": 72.0,
-            "infra": 36.1
+            "infra": 33.1
         },
         {
             "tick": 24000,
@@ -5551,7 +5552,7 @@
         },
         {
             "tick": 24320,
-            "economy": 34.6,
+            "economy": 37.0,
             "army": 73.6,
             "infra": 19.8
         },
@@ -5789,9 +5790,9 @@
         },
         {
             "tick": 30720,
-            "economy": 3.0,
+            "economy": 6.6,
             "army": 74.9,
-            "infra": 23.6
+            "infra": 21.8
         },
         {
             "tick": 30880,
@@ -5801,21 +5802,21 @@
         },
         {
             "tick": 31040,
-            "economy": 38.9,
+            "economy": 42.7,
             "army": 61.8,
-            "infra": 37.6
+            "infra": 33.8
         },
         {
             "tick": 31200,
             "economy": 14.9,
             "army": 64.2,
-            "infra": 23.5
+            "infra": 20.8
         },
         {
             "tick": 31360,
-            "economy": 23.0,
+            "economy": 25.1,
             "army": 61.4,
-            "infra": 31.1
+            "infra": 26.8
         },
         {
             "tick": 31520,
@@ -5823,9 +5824,9 @@
         },
         {
             "tick": 31680,
-            "economy": 20.2,
+            "economy": 25.2,
             "army": 63.8,
-            "infra": 23.3
+            "infra": 18.4
         },
         {
             "tick": 31840,
@@ -5859,9 +5860,9 @@
         },
         {
             "tick": 32800,
-            "economy": 42.3,
+            "economy": 63.1,
             "army": 30.0,
-            "infra": 27.7
+            "infra": 6.9
         },
         {
             "tick": 32960,
@@ -5912,9 +5913,9 @@
         },
         {
             "tick": 34240,
-            "economy": 18.2,
+            "economy": 20.0,
             "army": 68.5,
-            "infra": 13.3
+            "infra": 11.5
         },
         {
             "tick": 34400,
@@ -6254,8 +6255,9 @@
         },
         {
             "tick": 44160,
+            "economy": 6.8,
             "army": 69.5,
-            "infra": 30.5
+            "infra": 23.7
         },
         {
             "tick": 44320,
@@ -6302,9 +6304,9 @@
         },
         {
             "tick": 45600,
-            "economy": 5.6,
+            "economy": 13.7,
             "army": 83.9,
-            "infra": 10.6
+            "infra": 2.5
         },
         {
             "tick": 45760,
@@ -11817,9 +11819,9 @@
         },
         {
             "tick": 12320,
-            "economy": 29.5,
+            "economy": 30.6,
             "army": 57.7,
-            "infra": 26.1
+            "infra": 24.4
         },
         {
             "tick": 12480,
@@ -11829,57 +11831,57 @@
         },
         {
             "tick": 12640,
-            "economy": 15.4,
+            "economy": 16.9,
             "army": 66.5,
-            "infra": 21.3
+            "infra": 17.7
         },
         {
             "tick": 12800,
             "economy": 26.6,
             "army": 57.1,
-            "infra": 23.1
+            "infra": 22.5
         },
         {
             "tick": 12960,
-            "economy": 19.4,
+            "economy": 20.1,
             "army": 58.8,
             "infra": 27.2
         },
         {
             "tick": 13120,
-            "economy": 28.9,
+            "economy": 29.6,
             "army": 57.7,
-            "infra": 31.5
+            "infra": 24.1
         },
         {
             "tick": 13280,
             "economy": 19.4,
             "army": 53.8,
-            "infra": 25.1
+            "infra": 24.3
         },
         {
             "tick": 13440,
             "economy": 19.1,
             "army": 67.2,
-            "infra": 16.5
+            "infra": 14.6
         },
         {
             "tick": 13600,
             "economy": 22.9,
             "army": 65.6,
-            "infra": 17.0
+            "infra": 16.4
         },
         {
             "tick": 13760,
             "economy": 20.1,
             "army": 61.7,
-            "infra": 22.6
+            "infra": 21.2
         },
         {
             "tick": 13920,
             "economy": 11.9,
             "army": 61.7,
-            "infra": 25.6
+            "infra": 24.4
         },
         {
             "tick": 14080,
@@ -11891,37 +11893,37 @@
             "tick": 14240,
             "economy": 22.4,
             "army": 61.2,
-            "infra": 29.2
+            "infra": 25.3
         },
         {
             "tick": 14400,
-            "economy": 18.1,
+            "economy": 19.2,
             "army": 66.8,
-            "infra": 21.3
+            "infra": 16.8
         },
         {
             "tick": 14560,
             "economy": 26.8,
             "army": 64.8,
-            "infra": 16.7
+            "infra": 16.3
         },
         {
             "tick": 14720,
-            "economy": 23.2,
+            "economy": 23.5,
             "army": 62.5,
-            "infra": 26.9
+            "infra": 22.9
         },
         {
             "tick": 14880,
             "economy": 13.8,
             "army": 76.5,
-            "infra": 19.1
+            "infra": 18.4
         },
         {
             "tick": 15040,
             "economy": 14.2,
             "army": 68.9,
-            "infra": 24.5
+            "infra": 22.7
         },
         {
             "tick": 15200,
@@ -11931,7 +11933,7 @@
         },
         {
             "tick": 15360,
-            "economy": 22.2,
+            "economy": 23.4,
             "army": 68.8,
             "infra": 20.4
         },
@@ -11939,19 +11941,19 @@
             "tick": 15520,
             "economy": 20.8,
             "army": 63.6,
-            "infra": 23.5
+            "infra": 22.7
         },
         {
             "tick": 15680,
             "economy": 20.9,
             "army": 74.6,
-            "infra": 25.4
+            "infra": 21.1
         },
         {
             "tick": 15840,
             "economy": 23.3,
             "army": 59.8,
-            "infra": 29.6
+            "infra": 24.9
         },
         {
             "tick": 16000,
@@ -11963,31 +11965,31 @@
             "tick": 16160,
             "economy": 29.3,
             "army": 61.0,
-            "infra": 23.2
+            "infra": 22.5
         },
         {
             "tick": 16320,
             "economy": 21.4,
             "army": 58.1,
-            "infra": 24.7
+            "infra": 16.6
         },
         {
             "tick": 16480,
-            "economy": 30.9,
+            "economy": 29.5,
             "army": 62.2,
-            "infra": 22.8
+            "infra": 22.7
         },
         {
             "tick": 16640,
-            "economy": 22.8,
+            "economy": 18.9,
             "army": 60.8,
-            "infra": 27.3
+            "infra": 19.4
         },
         {
             "tick": 16800,
-            "economy": 24.0,
+            "economy": 25.0,
             "army": 66.5,
-            "infra": 26.6
+            "infra": 24.7
         },
         {
             "tick": 16960,
@@ -11999,19 +12001,19 @@
             "tick": 17120,
             "economy": 16.8,
             "army": 70.0,
-            "infra": 22.4
+            "infra": 21.7
         },
         {
             "tick": 17280,
-            "economy": 34.7,
+            "economy": 38.2,
             "army": 58.8,
-            "infra": 25.7
+            "infra": 21.6
         },
         {
             "tick": 17440,
-            "economy": 11.2,
+            "economy": 18.6,
             "army": 64.6,
-            "infra": 28.0
+            "infra": 26.3
         },
         {
             "tick": 17600,
@@ -12021,63 +12023,63 @@
         },
         {
             "tick": 17760,
-            "economy": 22.7,
+            "economy": 26.8,
             "army": 71.9,
-            "infra": 20.3
+            "infra": 13.8
         },
         {
             "tick": 17920,
             "economy": 18.6,
             "army": 69.9,
-            "infra": 27.2
+            "infra": 22.1
         },
         {
             "tick": 18080,
             "economy": 17.1,
             "army": 71.9,
-            "infra": 18.0
+            "infra": 16.8
         },
         {
             "tick": 18240,
-            "economy": 13.9,
+            "economy": 13.8,
             "army": 73.3,
-            "infra": 16.9
+            "infra": 15.3
         },
         {
             "tick": 18400,
             "economy": 20.4,
             "army": 61.9,
-            "infra": 20.8
+            "infra": 19.8
         },
         {
             "tick": 18560,
-            "economy": 7.5,
+            "economy": 9.1,
             "army": 64.9,
-            "infra": 21.1
+            "infra": 17.8
         },
         {
             "tick": 18720,
-            "economy": 15.1,
+            "economy": 17.1,
             "army": 73.9,
-            "infra": 21.0
+            "infra": 19.3
         },
         {
             "tick": 18880,
             "economy": 21.9,
             "army": 62.0,
-            "infra": 19.3
+            "infra": 18.1
         },
         {
             "tick": 19040,
-            "economy": 13.7,
+            "economy": 15.8,
             "army": 62.4,
-            "infra": 27.6
+            "infra": 27.5
         },
         {
             "tick": 19200,
             "economy": 14.0,
             "army": 74.7,
-            "infra": 16.8
+            "infra": 16.5
         },
         {
             "tick": 19360,
@@ -12089,19 +12091,19 @@
             "tick": 19520,
             "economy": 28.2,
             "army": 65.7,
-            "infra": 27.8
+            "infra": 23.9
         },
         {
             "tick": 19680,
             "economy": 18.0,
             "army": 72.7,
-            "infra": 24.7
+            "infra": 21.4
         },
         {
             "tick": 19840,
-            "economy": 7.4,
+            "economy": 7.5,
             "army": 72.8,
-            "infra": 24.8
+            "infra": 20.9
         },
         {
             "tick": 20000,
@@ -12111,81 +12113,81 @@
         },
         {
             "tick": 20160,
-            "economy": 12.9,
+            "economy": 18.6,
             "army": 74.6,
-            "infra": 19.4
+            "infra": 18.3
         },
         {
             "tick": 20320,
             "economy": 9.3,
             "army": 68.0,
-            "infra": 31.2
+            "infra": 30.4
         },
         {
             "tick": 20480,
             "economy": 29.5,
             "army": 63.0,
-            "infra": 25.1
+            "infra": 24.8
         },
         {
             "tick": 20640,
-            "economy": 30.3,
+            "economy": 35.5,
             "army": 63.5,
-            "infra": 29.8
+            "infra": 24.0
         },
         {
             "tick": 20800,
             "economy": 14.9,
             "army": 73.2,
-            "infra": 23.4
+            "infra": 22.6
         },
         {
             "tick": 20960,
             "economy": 9.6,
             "army": 58.4,
-            "infra": 19.6
+            "infra": 15.0
         },
         {
             "tick": 21120,
             "economy": 19.0,
             "army": 62.0,
-            "infra": 19.3
+            "infra": 18.7
         },
         {
             "tick": 21280,
             "economy": 18.5,
             "army": 59.8,
-            "infra": 29.6
+            "infra": 25.5
         },
         {
             "tick": 21440,
-            "economy": 9.1,
+            "economy": 10.9,
             "army": 71.0,
-            "infra": 27.5
+            "infra": 24.2
         },
         {
             "tick": 21600,
-            "economy": 10.4,
+            "economy": 11.1,
             "army": 78.0,
-            "infra": 20.7
+            "infra": 20.0
         },
         {
             "tick": 21760,
-            "economy": 18.2,
+            "economy": 12.8,
             "army": 75.6,
-            "infra": 21.2
+            "infra": 20.5
         },
         {
             "tick": 21920,
             "economy": 24.4,
             "army": 72.7,
-            "infra": 22.8
+            "infra": 19.8
         },
         {
             "tick": 22080,
             "economy": 17.4,
             "army": 75.0,
-            "infra": 20.4
+            "infra": 16.6
         },
         {
             "tick": 22240,
@@ -12195,69 +12197,69 @@
         },
         {
             "tick": 22400,
-            "economy": 29.3,
+            "economy": 31.0,
             "army": 68.1,
-            "infra": 24.5
+            "infra": 20.6
         },
         {
             "tick": 22560,
             "economy": 8.9,
             "army": 70.2,
-            "infra": 26.3
+            "infra": 18.9
         },
         {
             "tick": 22720,
             "economy": 12.1,
             "army": 73.1,
-            "infra": 20.0
+            "infra": 12.7
         },
         {
             "tick": 22880,
             "economy": 27.2,
             "army": 56.5,
-            "infra": 23.6
+            "infra": 20.7
         },
         {
             "tick": 23040,
             "economy": 16.2,
             "army": 75.2,
-            "infra": 23.9
+            "infra": 22.5
         },
         {
             "tick": 23200,
             "economy": 16.4,
             "army": 71.3,
-            "infra": 28.4
+            "infra": 25.5
         },
         {
             "tick": 23360,
             "economy": 16.0,
             "army": 66.9,
-            "infra": 27.3
+            "infra": 21.3
         },
         {
             "tick": 23520,
             "economy": 26.3,
             "army": 58.2,
-            "infra": 36.2
+            "infra": 28.8
         },
         {
             "tick": 23680,
             "economy": 22.6,
             "army": 73.6,
-            "infra": 18.1
+            "infra": 14.1
         },
         {
             "tick": 23840,
             "economy": 11.1,
             "army": 66.1,
-            "infra": 32.5
+            "infra": 29.8
         },
         {
             "tick": 24000,
             "economy": 17.4,
             "army": 62.7,
-            "infra": 30.3
+            "infra": 24.5
         },
         {
             "tick": 24160,
@@ -12267,9 +12269,9 @@
         },
         {
             "tick": 24320,
-            "economy": 18.5,
+            "economy": 27.6,
             "army": 73.8,
-            "infra": 26.5
+            "infra": 19.9
         },
         {
             "tick": 24480,
@@ -12281,7 +12283,7 @@
             "tick": 24640,
             "economy": 21.9,
             "army": 67.3,
-            "infra": 23.2
+            "infra": 19.9
         },
         {
             "tick": 24800,
@@ -12293,31 +12295,31 @@
             "tick": 24960,
             "economy": 5.2,
             "army": 79.2,
-            "infra": 20.4
+            "infra": 17.6
         },
         {
             "tick": 25120,
-            "economy": 18.8,
+            "economy": 13.4,
             "army": 71.9,
-            "infra": 28.1
+            "infra": 26.5
         },
         {
             "tick": 25280,
             "economy": 14.6,
             "army": 76.4,
-            "infra": 20.1
+            "infra": 13.1
         },
         {
             "tick": 25440,
             "economy": 16.2,
             "army": 72.0,
-            "infra": 20.0
+            "infra": 19.9
         },
         {
             "tick": 25600,
             "economy": 24.5,
             "army": 61.4,
-            "infra": 31.5
+            "infra": 30.6
         },
         {
             "tick": 25760,
@@ -12329,11 +12331,11 @@
             "tick": 25920,
             "economy": 24.1,
             "army": 70.6,
-            "infra": 16.7
+            "infra": 14.6
         },
         {
             "tick": 26080,
-            "economy": 9.0,
+            "economy": 10.2,
             "army": 75.4,
             "infra": 20.3
         },
@@ -12347,11 +12349,11 @@
             "tick": 26400,
             "economy": 12.0,
             "army": 74.3,
-            "infra": 25.4
+            "infra": 21.7
         },
         {
             "tick": 26560,
-            "economy": 18.6,
+            "economy": 21.1,
             "army": 78.3,
             "infra": 18.0
         },
@@ -12359,13 +12361,13 @@
             "tick": 26720,
             "economy": 8.4,
             "army": 81.9,
-            "infra": 14.6
+            "infra": 13.8
         },
         {
             "tick": 26880,
             "economy": 29.5,
             "army": 70.0,
-            "infra": 18.0
+            "infra": 13.5
         },
         {
             "tick": 27040,
@@ -12383,7 +12385,7 @@
             "tick": 27360,
             "economy": 10.3,
             "army": 77.7,
-            "infra": 19.9
+            "infra": 18.1
         },
         {
             "tick": 27520,
@@ -12401,7 +12403,7 @@
             "tick": 27840,
             "economy": 11.3,
             "army": 76.8,
-            "infra": 21.9
+            "infra": 23.9
         },
         {
             "tick": 28000,
@@ -12413,13 +12415,13 @@
             "tick": 28160,
             "economy": 16.7,
             "army": 82.8,
-            "infra": 13.4
+            "infra": 12.1
         },
         {
             "tick": 28320,
             "economy": 14.5,
             "army": 74.5,
-            "infra": 22.9
+            "infra": 21.6
         },
         {
             "tick": 28480,
@@ -12429,21 +12431,21 @@
         },
         {
             "tick": 28640,
-            "economy": 19.3,
+            "economy": 16.4,
             "army": 75.2,
-            "infra": 24.8
+            "infra": 15.1
         },
         {
             "tick": 28800,
             "economy": 22.1,
             "army": 72.3,
-            "infra": 24.1
+            "infra": 17.4
         },
         {
             "tick": 28960,
             "economy": 16.7,
             "army": 71.3,
-            "infra": 19.8
+            "infra": 17.8
         },
         {
             "tick": 29120,
@@ -12467,7 +12469,7 @@
             "tick": 29600,
             "economy": 19.3,
             "army": 62.8,
-            "infra": 11.7
+            "infra": 22.9
         },
         {
             "tick": 29760,
@@ -12479,13 +12481,13 @@
             "tick": 29920,
             "economy": 4.0,
             "army": 76.0,
-            "infra": 24.0
+            "infra": 20.0
         },
         {
             "tick": 30080,
             "economy": 16.7,
             "army": 72.6,
-            "infra": 17.7
+            "infra": 15.3
         },
         {
             "tick": 30240,
@@ -12497,7 +12499,7 @@
             "tick": 30400,
             "economy": 22.3,
             "army": 65.5,
-            "infra": 16.4
+            "infra": 15.1
         },
         {
             "tick": 30560,
@@ -12515,7 +12517,7 @@
             "tick": 30880,
             "economy": 25.5,
             "army": 56.7,
-            "infra": 43.3
+            "infra": 33.1
         },
         {
             "tick": 31040,
@@ -12533,7 +12535,7 @@
             "tick": 31360,
             "economy": 6.4,
             "army": 83.1,
-            "infra": 16.9
+            "infra": 15.2
         },
         {
             "tick": 31520,
@@ -12563,7 +12565,7 @@
             "tick": 32160,
             "economy": 17.3,
             "army": 68.8,
-            "infra": 21.9
+            "infra": 18.8
         },
         {
             "tick": 32320,
@@ -12593,19 +12595,19 @@
             "tick": 32960,
             "economy": 2.9,
             "army": 79.9,
-            "infra": 20.1
+            "infra": 15.2
         },
         {
             "tick": 33120,
             "economy": 11.3,
             "army": 70.0,
-            "infra": 30.0
+            "infra": 18.7
         },
         {
             "tick": 33280,
             "economy": 35.3,
             "army": 47.3,
-            "infra": 27.2
+            "infra": 24.7
         },
         {
             "tick": 33440,
@@ -12623,7 +12625,7 @@
             "tick": 33760,
             "economy": 43.9,
             "army": 81.5,
-            "infra": 17.6
+            "infra": 13.9
         },
         {
             "tick": 33920,
@@ -12665,7 +12667,7 @@
             "tick": 34880,
             "economy": 8.6,
             "army": 96.9,
-            "infra": 21.8
+            "infra": 17.5
         },
         {
             "tick": 35040,
@@ -12677,37 +12679,37 @@
             "tick": 35200,
             "economy": 6.9,
             "army": 78.3,
-            "infra": 16.8
+            "infra": 14.9
         },
         {
             "tick": 35360,
             "economy": 7.9,
             "army": 84.0,
-            "infra": 16.0
+            "infra": 15.4
         },
         {
             "tick": 35520,
             "economy": 18.9,
             "army": 65.8,
-            "infra": 23.4
+            "infra": 15.3
         },
         {
             "tick": 35680,
             "economy": 38.4,
             "army": 62.8,
-            "infra": 16.3
+            "infra": 14.0
         },
         {
             "tick": 35840,
             "economy": 24.5,
             "army": 61.6,
-            "infra": 35.0
+            "infra": 26.1
         },
         {
             "tick": 36000,
             "economy": 30.2,
             "army": 70.4,
-            "infra": 24.1
+            "infra": 21.2
         },
         {
             "tick": 36160,
@@ -12725,7 +12727,7 @@
             "tick": 36480,
             "economy": 17.6,
             "army": 67.8,
-            "infra": 21.1
+            "infra": 17.5
         },
         {
             "tick": 36640,
@@ -12736,13 +12738,13 @@
             "tick": 36800,
             "economy": 11.0,
             "army": 96.2,
-            "infra": 7.6
+            "infra": 1.7
         },
         {
             "tick": 36960,
             "economy": 6.1,
             "army": 85.4,
-            "infra": 14.6
+            "infra": 8.5
         },
         {
             "tick": 37120,
@@ -15547,7 +15549,7 @@
             "tick": 11520,
             "economy": 14.4,
             "army": 58.3,
-            "infra": 25.1
+            "infra": 21.1
         },
         {
             "tick": 11680,
@@ -15569,9 +15571,9 @@
         },
         {
             "tick": 12160,
-            "economy": 22.0,
+            "economy": 23.2,
             "army": 58.7,
-            "infra": 33.5
+            "infra": 31.5
         },
         {
             "tick": 12320,
@@ -15595,7 +15597,7 @@
             "tick": 12800,
             "economy": 13.2,
             "army": 75.7,
-            "infra": 23.9
+            "infra": 16.0
         },
         {
             "tick": 12960,
@@ -15605,9 +15607,9 @@
         },
         {
             "tick": 13120,
-            "economy": 22.6,
+            "economy": 26.9,
             "army": 54.7,
-            "infra": 27.9
+            "infra": 25.0
         },
         {
             "tick": 13280,
@@ -15623,15 +15625,15 @@
         },
         {
             "tick": 13600,
-            "economy": 21.4,
+            "economy": 27.9,
             "army": 61.2,
             "infra": 19.4
         },
         {
             "tick": 13760,
-            "economy": 40.0,
+            "economy": 41.8,
             "army": 58.0,
-            "infra": 35.6
+            "infra": 31.9
         },
         {
             "tick": 13920,
@@ -15653,7 +15655,7 @@
         },
         {
             "tick": 14400,
-            "economy": 23.2,
+            "economy": 33.5,
             "army": 62.5,
             "infra": 27.9
         },
@@ -15665,13 +15667,13 @@
         },
         {
             "tick": 14720,
-            "economy": 34.5,
+            "economy": 37.3,
             "army": 47.4,
-            "infra": 35.6
+            "infra": 32.5
         },
         {
             "tick": 14880,
-            "economy": 41.5,
+            "economy": 44.7,
             "army": 42.1,
             "infra": 24.0
         },
@@ -15685,7 +15687,7 @@
             "tick": 15200,
             "economy": 38.0,
             "army": 36.7,
-            "infra": 35.0
+            "infra": 31.0
         },
         {
             "tick": 15360,
@@ -15695,9 +15697,9 @@
         },
         {
             "tick": 15520,
-            "economy": 8.7,
+            "economy": 11.6,
             "army": 46.3,
-            "infra": 43.0
+            "infra": 39.4
         },
         {
             "tick": 15680,
@@ -15707,15 +15709,15 @@
         },
         {
             "tick": 15840,
-            "economy": 42.9,
+            "economy": 47.9,
             "army": 43.5,
-            "infra": 49.9
+            "infra": 42.2
         },
         {
             "tick": 16000,
-            "economy": 40.8,
+            "economy": 46.5,
             "army": 46.4,
-            "infra": 45.6
+            "infra": 39.9
         },
         {
             "tick": 16160,
@@ -15725,9 +15727,9 @@
         },
         {
             "tick": 16320,
-            "economy": 25.8,
+            "economy": 30.5,
             "army": 60.4,
-            "infra": 36.8
+            "infra": 32.1
         },
         {
             "tick": 16480,
@@ -15737,7 +15739,7 @@
         },
         {
             "tick": 16640,
-            "economy": 16.2,
+            "economy": 22.6,
             "army": 51.2,
             "infra": 28.9
         },
@@ -15761,15 +15763,15 @@
         },
         {
             "tick": 17280,
-            "economy": 17.2,
+            "economy": 28.0,
             "army": 51.2,
-            "infra": 33.8
+            "infra": 29.6
         },
         {
             "tick": 17440,
-            "economy": 14.7,
+            "economy": 26.8,
             "army": 61.1,
-            "infra": 32.1
+            "infra": 26.8
         },
         {
             "tick": 17600,
@@ -15785,15 +15787,15 @@
         },
         {
             "tick": 17920,
-            "economy": 14.0,
+            "economy": 18.6,
             "army": 71.1,
-            "infra": 14.9
+            "infra": 12.6
         },
         {
             "tick": 18080,
             "economy": 20.3,
             "army": 54.0,
-            "infra": 34.5
+            "infra": 28.0
         },
         {
             "tick": 18240,
@@ -15815,9 +15817,9 @@
         },
         {
             "tick": 18720,
-            "economy": 12.9,
+            "economy": 14.9,
             "army": 65.0,
-            "infra": 29.8
+            "infra": 27.0
         },
         {
             "tick": 18880,
@@ -15829,29 +15831,29 @@
             "tick": 19040,
             "economy": 27.0,
             "army": 58.5,
-            "infra": 30.1
+            "infra": 24.9
         },
         {
             "tick": 19200,
             "economy": 33.6,
             "army": 52.7,
-            "infra": 33.2
+            "infra": 31.1
         },
         {
             "tick": 19360,
-            "economy": 28.0,
+            "economy": 34.4,
             "army": 57.4,
-            "infra": 30.0
+            "infra": 27.0
         },
         {
             "tick": 19520,
-            "economy": 19.1,
+            "economy": 22.1,
             "army": 52.5,
             "infra": 30.1
         },
         {
             "tick": 19680,
-            "economy": 20.8,
+            "economy": 27.2,
             "army": 63.0,
             "infra": 35.2
         },
@@ -15875,9 +15877,9 @@
         },
         {
             "tick": 20320,
-            "economy": 27.8,
+            "economy": 32.5,
             "army": 57.3,
-            "infra": 28.5
+            "infra": 28.2
         },
         {
             "tick": 20480,
@@ -15887,27 +15889,27 @@
         },
         {
             "tick": 20640,
-            "economy": 8.6,
+            "economy": 10.1,
             "army": 72.2,
-            "infra": 23.7
+            "infra": 22.9
         },
         {
             "tick": 20800,
-            "economy": 24.6,
+            "economy": 26.4,
             "army": 44.1,
-            "infra": 29.8
+            "infra": 25.4
         },
         {
             "tick": 20960,
-            "economy": 11.0,
+            "economy": 17.2,
             "army": 72.2,
-            "infra": 27.8
+            "infra": 22.3
         },
         {
             "tick": 21120,
             "economy": 22.3,
             "army": 43.9,
-            "infra": 37.0
+            "infra": 25.2
         },
         {
             "tick": 21280,
@@ -15917,15 +15919,15 @@
         },
         {
             "tick": 21440,
-            "economy": 12.4,
+            "economy": 16.3,
             "army": 62.3,
-            "infra": 37.7
+            "infra": 34.0
         },
         {
             "tick": 21600,
-            "economy": 18.4,
+            "economy": 19.3,
             "army": 62.6,
-            "infra": 24.3
+            "infra": 23.5
         },
         {
             "tick": 21760,
@@ -15937,13 +15939,13 @@
             "tick": 21920,
             "economy": 7.5,
             "army": 61.1,
-            "infra": 38.9
+            "infra": 31.7
         },
         {
             "tick": 22080,
             "economy": 44.2,
             "army": 33.9,
-            "infra": 35.3
+            "infra": 22.8
         },
         {
             "tick": 22240,
@@ -15965,27 +15967,27 @@
         },
         {
             "tick": 22720,
-            "economy": 18.5,
+            "economy": 19.3,
             "army": 55.7,
-            "infra": 34.5
+            "infra": 33.6
         },
         {
             "tick": 22880,
-            "economy": 6.7,
+            "economy": 8.5,
             "army": 62.2,
-            "infra": 37.5
+            "infra": 35.7
         },
         {
             "tick": 23040,
             "economy": 21.1,
             "army": 63.0,
-            "infra": 37.0
+            "infra": 26.1
         },
         {
             "tick": 23200,
             "economy": 20.9,
             "army": 57.0,
-            "infra": 39.1
+            "infra": 36.6
         },
         {
             "tick": 23360,
@@ -16001,9 +16003,9 @@
         },
         {
             "tick": 23680,
-            "economy": 13.3,
+            "economy": 14.5,
             "army": 56.8,
-            "infra": 35.5
+            "infra": 34.7
         },
         {
             "tick": 23840,
@@ -16019,9 +16021,9 @@
         },
         {
             "tick": 24160,
-            "economy": 14.7,
+            "economy": 15.9,
             "army": 79.0,
-            "infra": 19.8
+            "infra": 16.8
         },
         {
             "tick": 24320,
@@ -16031,7 +16033,7 @@
         },
         {
             "tick": 24480,
-            "economy": 8.1,
+            "economy": 10.6,
             "army": 74.4,
             "infra": 25.5
         },
@@ -16081,7 +16083,7 @@
             "tick": 25760,
             "economy": 24.8,
             "army": 48.5,
-            "infra": 34.7
+            "infra": 30.1
         },
         {
             "tick": 25920,
@@ -16510,7 +16512,7 @@
         },
         {
             "tick": 10240,
-            "economy": 20.9,
+            "economy": 26.6,
             "army": 67.2,
             "infra": 29.2
         },
@@ -16540,21 +16542,21 @@
         },
         {
             "tick": 11040,
-            "economy": 33.4,
+            "economy": 35.1,
             "army": 47.8,
-            "infra": 32.5
+            "infra": 31.1
         },
         {
             "tick": 11200,
-            "economy": 12.7,
+            "economy": 10.6,
             "army": 67.1,
-            "infra": 30.2
+            "infra": 27.4
         },
         {
             "tick": 11360,
-            "economy": 24.7,
+            "economy": 31.8,
             "army": 41.8,
-            "infra": 29.5
+            "infra": 24.7
         },
         {
             "tick": 11520,
@@ -16570,9 +16572,9 @@
         },
         {
             "tick": 11840,
-            "economy": 28.8,
+            "economy": 18.8,
             "army": 63.2,
-            "infra": 36.4
+            "infra": 36.8
         },
         {
             "tick": 12000,
@@ -16584,7 +16586,7 @@
             "tick": 12160,
             "economy": 21.1,
             "army": 83.8,
-            "infra": 19.0
+            "infra": 14.5
         },
         {
             "tick": 12320,
@@ -16594,27 +16596,27 @@
         },
         {
             "tick": 12480,
-            "economy": 7.1,
+            "economy": 15.2,
             "army": 76.0,
-            "infra": 26.4
+            "infra": 25.4
         },
         {
             "tick": 12640,
             "economy": 18.8,
             "army": 70.2,
-            "infra": 36.2
+            "infra": 30.9
         },
         {
             "tick": 12800,
             "economy": 55.5,
             "army": 52.6,
-            "infra": 30.0
+            "infra": 26.0
         },
         {
             "tick": 12960,
-            "economy": 34.1,
+            "economy": 42.4,
             "army": 65.9,
-            "infra": 36.2
+            "infra": 33.7
         },
         {
             "tick": 13120,
@@ -16632,11 +16634,11 @@
             "tick": 13440,
             "economy": 35.5,
             "army": 60.2,
-            "infra": 21.9
+            "infra": 21.4
         },
         {
             "tick": 13600,
-            "economy": 10.9,
+            "economy": 11.4,
             "army": 63.9,
             "infra": 22.0
         },
@@ -16644,7 +16646,7 @@
             "tick": 13760,
             "economy": 25.2,
             "army": 58.7,
-            "infra": 27.2
+            "infra": 21.7
         },
         {
             "tick": 13920,
@@ -16654,7 +16656,7 @@
         },
         {
             "tick": 14080,
-            "economy": 34.1,
+            "economy": 38.0,
             "army": 75.6,
             "infra": 12.6
         },
@@ -16668,31 +16670,31 @@
             "tick": 14400,
             "economy": 39.5,
             "army": 55.1,
-            "infra": 26.4
+            "infra": 22.4
         },
         {
             "tick": 14560,
             "economy": 21.5,
             "army": 69.0,
-            "infra": 21.1
+            "infra": 20.5
         },
         {
             "tick": 14720,
             "economy": 17.4,
             "army": 67.0,
-            "infra": 26.0
+            "infra": 23.1
         },
         {
             "tick": 14880,
             "economy": 10.6,
             "army": 67.0,
-            "infra": 27.2
+            "infra": 20.8
         },
         {
             "tick": 15040,
-            "economy": 23.5,
+            "economy": 23.7,
             "army": 67.3,
-            "infra": 28.4
+            "infra": 27.8
         },
         {
             "tick": 15200,
@@ -16704,7 +16706,7 @@
             "tick": 15360,
             "economy": 9.5,
             "army": 59.7,
-            "infra": 44.1
+            "infra": 34.7
         },
         {
             "tick": 15520,
@@ -16726,15 +16728,15 @@
         },
         {
             "tick": 16000,
-            "economy": 17.6,
+            "economy": 19.1,
             "army": 58.5,
-            "infra": 38.2
+            "infra": 35.0
         },
         {
             "tick": 16160,
-            "economy": 27.2,
+            "economy": 32.4,
             "army": 62.4,
-            "infra": 37.6
+            "infra": 30.0
         },
         {
             "tick": 16320,
@@ -16744,9 +16746,9 @@
         },
         {
             "tick": 16480,
-            "economy": 9.4,
+            "economy": 18.8,
             "army": 57.5,
-            "infra": 42.5
+            "infra": 33.5
         },
         {
             "tick": 16640,
@@ -16756,9 +16758,9 @@
         },
         {
             "tick": 16800,
-            "economy": 9.7,
+            "economy": 12.1,
             "army": 67.3,
-            "infra": 27.2
+            "infra": 24.5
         },
         {
             "tick": 16960,
@@ -16781,13 +16783,13 @@
             "tick": 17440,
             "economy": 25.9,
             "army": 50.6,
-            "infra": 47.1
+            "infra": 36.9
         },
         {
             "tick": 17600,
-            "economy": 30.8,
+            "economy": 18.6,
             "army": 75.0,
-            "infra": 25.0
+            "infra": 21.3
         },
         {
             "tick": 17760,
@@ -16799,7 +16801,7 @@
             "tick": 17920,
             "economy": 34.3,
             "army": 72.9,
-            "infra": 22.8
+            "infra": 19.9
         },
         {
             "tick": 18080,
@@ -16809,15 +16811,15 @@
         },
         {
             "tick": 18240,
-            "economy": 40.4,
+            "economy": 8.2,
             "army": 50.3,
-            "infra": 22.8
+            "infra": 18.7
         },
         {
             "tick": 18400,
             "economy": 24.4,
             "army": 36.4,
-            "infra": 38.8
+            "infra": 37.0
         },
         {
             "tick": 18560,
@@ -16827,9 +16829,9 @@
         },
         {
             "tick": 18720,
-            "economy": 26.5,
+            "economy": 28.2,
             "army": 71.2,
-            "infra": 31.8
+            "infra": 59.1
         },
         {
             "tick": 18880,
@@ -16845,9 +16847,9 @@
         },
         {
             "tick": 19200,
-            "economy": 26.9,
+            "economy": 29.7,
             "army": 52.8,
-            "infra": 43.3
+            "infra": 39.5
         },
         {
             "tick": 19360,
@@ -16889,7 +16891,7 @@
             "tick": 20320,
             "economy": 25.0,
             "army": 74.7,
-            "infra": 65.1
+            "infra": 62.5
         },
         {
             "tick": 20480,
@@ -16931,7 +16933,7 @@
             "tick": 21440,
             "economy": 8.6,
             "army": 83.0,
-            "infra": 17.1
+            "infra": 14.9
         },
         {
             "tick": 21600,

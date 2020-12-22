@@ -11,7 +11,7 @@ command_buildings = [
     'Nexus',
     'CommandCenter',
     'OrbitalCommand',
-    'PlanteryFortress',
+    'PlanetaryFortress',
     'Hatchery',
     'Lair',
     'Hive',
