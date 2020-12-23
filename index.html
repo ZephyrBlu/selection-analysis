@@ -62,7 +62,7 @@
             'Larva -> Econ, Overlord -> Infra, Queen + Creep new category, No Eggs',
         ];
 
-        console.log(selection_timeline);
+        console.log(sources);
 
         sources.forEach((data, index) => {
             let values = data['serral'];
@@ -99,6 +99,10 @@
             const army = values.map(v => v.army || 0);
             const infra = values.map(v => v.infra || 0);
 
+            // new categories
+            const creep = values.map(v => v.creep || 0);
+            const queen = values.map(v => v.queen || 0);
+
             var canvasWrapper = document.createElement('div');
             canvasWrapper.classList.add('wrapper');
             canvasWrapper.style.position = 'relative';
@@ -106,12 +110,12 @@
             canvasWrapper.style.display = 'inline-block';
 
             var canvas = document.createElement('canvas');
-            canvas.id = player;
+            canvas.id = names[index];
 
             canvasWrapper.appendChild(canvas);
             document.body.appendChild(canvasWrapper);
 
-            var ctx = document.getElementById(player).getContext('2d');
+            var ctx = document.getElementById(names[index]).getContext('2d');
             var chart = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -128,6 +132,18 @@
                             backgroundColor: 'blue',
                             borderColor: 'blue',
                             data: infra,
+                        },
+                        {
+                            label: 'Queen',
+                            backgroundColor: 'grey',
+                            borderColor: 'grey',
+                            data: queen,
+                        },
+                        {
+                            label: 'Creep',
+                            backgroundColor: 'purple',
+                            borderColor: 'purple',
+                            data: creep,
                         },
                         {
                             label: 'Army',
