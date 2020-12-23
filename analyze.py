@@ -33,6 +33,10 @@ def handle_replay(path, player_names, identifiers):
             'economy': [],
             'army': [],
             'infra': [],
+
+            # new categories
+            'creep': [],
+            'queen': [],
         }
         # remove last selection since it technically has no end
         selections = player.selections[:-1]
@@ -61,6 +65,10 @@ def handle_replay(path, player_names, identifiers):
                 'economy': [],
                 'army': [],
                 'infra': [],
+
+                # new categories
+                'creep': [],
+                'queen': [],
             }
 
             # iterating through all selections in the current tick
@@ -74,9 +82,20 @@ def handle_replay(path, player_names, identifiers):
                 # check the selection for each group
                 # if we haven't already counted it for a group, record the selection length
                 for obj in s['selection']:
-                    if (
+                    if obj.name == 'Egg':
+                        continue
+                    elif 'Creep' in obj.name:
+                        if 'creep' not in seen_group:
+                            selection_times['creep'].append(diff)
+                            seen_group.add('creep')
+                    elif obj.name == 'Queen':
+                        if 'queen' not in seen_group:
+                            selection_times['queen'].append(diff)
+                            seen_group.add('queen')
+                    elif (
                         obj.name in command_buildings
                         or GameObj.WORKER in obj.type
+                        or obj.name == 'Larva'
                     ):
                         if 'economy' not in seen_group:
                             selection_times['economy'].append(diff)
@@ -84,7 +103,7 @@ def handle_replay(path, player_names, identifiers):
                     elif (
                         GameObj.BUILDING in obj.type
                         or obj.name == 'Queen'
-                        or obj.name == 'Larva'
+                        or obj.name == 'Overlord'
                     ):
                         if 'infra' not in seen_group:
                             selection_times['infra'].append(diff)
@@ -165,6 +184,10 @@ if __name__ == '__main__':
             'economy': {},
             'army': {},
             'infra': {},
+
+            # new categories
+            'creep': {},
+            'queen': {},
         }
         for game in player_data:
             for group, times in game.items():
@@ -188,8 +211,8 @@ if __name__ == '__main__':
                     aggregated_ticks[tick].update({group: avg})
         player_ticks[player.name] = sorted(list(aggregated_ticks.values()), key=lambda x: x['tick'])
 
-    with open('selection_timeline.json', 'w') as selection_data:
+    with open('selection_timeline_loqce.json', 'w') as selection_data:
         json.dump(player_ticks, selection_data, indent=4)
 
-    with open('selection_timeline.js', 'w') as selection_data:
-        selection_data.write(f'var selection_timeline = {player_ticks}')
+    with open('selection_timeline_loqce.js', 'w') as selection_data:
+        selection_data.write(f'var selection_timeline_loqce = {player_ticks}')

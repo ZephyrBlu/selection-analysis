@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <title>Selection Analysis</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="selection_timeline.js"></script>
+    <!-- <script src="selection_timeline.js"></script> -->
+    <script src="selection_timeline_original.js"></script>
+    <script src="selection_timeline_lo.js"></script>
+    <script src="selection_timeline_loqc.js"></script>
+    <script src="selection_timeline_loqce.js"></script>
 </head>
 <body>
     <style>
@@ -44,10 +48,24 @@
             'afreecadrg',
         ];
 
+        const sources = [
+            selection_timeline_original,
+            selection_timeline_lo,
+            selection_timeline_loqc,
+            selection_timeline_loqce,
+        ];
+
+        const names = [
+            'Original',
+            'Larva -> Econ, Overlord -> Infra',
+            'Larva -> Econ, Overlord -> Infra, Queen + Creep new category',
+            'Larva -> Econ, Overlord -> Infra, Queen + Creep new category, No Eggs',
+        ];
+
         console.log(selection_timeline);
 
-        players.forEach((player) => {
-            let values = selection_timeline[player];
+        sources.forEach((data, index) => {
+            let values = data['serral'];
             values.sort((a, b) => a.tick - b.tick);
             values = values.filter(v => v.tick <= 20160);
             const axis = values.map((v) => {
@@ -123,7 +141,7 @@
                     title: {
                         display: true,
                         fontSize: 24,
-                        text: player.charAt(0).toUpperCase() + player.slice(1),
+                        text: names[index],
                     },
                     legend: {
                         labels: {
