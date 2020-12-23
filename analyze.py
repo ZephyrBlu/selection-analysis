@@ -82,10 +82,12 @@ def handle_replay(path, player_names, identifiers):
                 # check the selection for each group
                 # if we haven't already counted it for a group, record the selection length
                 for obj in s['selection']:
-                    if obj.name == 'Egg' or obj.name == 'Larva':
-                        continue
+                    # if obj.name == 'Egg' or obj.name == 'Larva':
+                    #     continue
                     if 'Creep' in obj.name:
                         if 'creep' not in seen_group:
+                            if player.name.lower() == 'serral':
+                                print(path, s)
                             selection_times['creep'].append(diff)
                             seen_group.add('creep')
                     elif obj.name == 'Queen':
@@ -95,13 +97,16 @@ def handle_replay(path, player_names, identifiers):
                     elif (
                         obj.name in command_buildings
                         or GameObj.WORKER in obj.type
+                        or obj.name == 'Larva'
                     ):
                         if 'economy' not in seen_group:
                             selection_times['economy'].append(diff)
                             seen_group.add('economy')
                     elif (
                         GameObj.BUILDING in obj.type
-                        or obj.name == 'Overlord'
+                        or obj.name == 'Queen'
+                        or 'Overlord' in obj.name
+                        or 'Overseer' in obj.name
                     ):
                         if 'infra' not in seen_group:
                             selection_times['infra'].append(diff)
@@ -209,8 +214,8 @@ if __name__ == '__main__':
                     aggregated_ticks[tick].update({group: avg})
         player_ticks[player.name] = sorted(list(aggregated_ticks.values()), key=lambda x: x['tick'])
 
-    with open('selection_timeline_loqce.json', 'w') as selection_data:
-        json.dump(player_ticks, selection_data, indent=4)
+    # with open('selection_timeline_loqc.json', 'w') as selection_data:
+    #     json.dump(player_ticks, selection_data, indent=4)
 
-    with open('selection_timeline_loqce.js', 'w') as selection_data:
-        selection_data.write(f'var selection_timeline_loqce = {player_ticks}')
+    # with open('selection_timeline_loqc.js', 'w') as selection_data:
+    #     selection_data.write(f'var selection_timeline_loqc = {player_ticks}')
