@@ -82,9 +82,9 @@ def handle_replay(path, player_names, identifiers):
                 # check the selection for each group
                 # if we haven't already counted it for a group, record the selection length
                 for obj in s['selection']:
-                    if obj.name == 'Egg':
+                    if obj.name == 'Egg' or obj.name == 'Larva':
                         continue
-                    elif 'Creep' in obj.name:
+                    if 'Creep' in obj.name:
                         if 'creep' not in seen_group:
                             selection_times['creep'].append(diff)
                             seen_group.add('creep')
@@ -95,14 +95,12 @@ def handle_replay(path, player_names, identifiers):
                     elif (
                         obj.name in command_buildings
                         or GameObj.WORKER in obj.type
-                        or obj.name == 'Larva'
                     ):
                         if 'economy' not in seen_group:
                             selection_times['economy'].append(diff)
                             seen_group.add('economy')
                     elif (
                         GameObj.BUILDING in obj.type
-                        or obj.name == 'Queen'
                         or obj.name == 'Overlord'
                     ):
                         if 'infra' not in seen_group:
